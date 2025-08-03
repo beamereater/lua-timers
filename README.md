@@ -1,2 +1,2 @@
 # lua-timers
-Allows clock() and CLOCKS_PER_SEC from time.h into lua 5.1
+Adds clock() and CLOCKS_PER_SEC into Lua 5.1
