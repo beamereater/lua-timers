@@ -26,7 +26,7 @@ LUA_A=	liblua.a
 CORE_O=	lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o \
 	lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o  \
 	lundump.o lvm.o lzio.o
-LIB_O=	lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o \
+LIB_O=	lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o timers.o loslib.o ltablib.o \
 	lstrlib.o loadlib.o linit.o
 
 LUA_T=	lua
@@ -146,6 +146,7 @@ liolib.o: liolib.c lua.h luaconf.h lauxlib.h lualib.h
 llex.o: llex.c lua.h luaconf.h ldo.h lobject.h llimits.h lstate.h ltm.h \
   lzio.h lmem.h llex.h lparser.h lstring.h lgc.h ltable.h
 lmathlib.o: lmathlib.c lua.h luaconf.h lauxlib.h lualib.h
+timers.o: timers.c lua.h
 lmem.o: lmem.c lua.h luaconf.h ldebug.h lstate.h lobject.h llimits.h \
   ltm.h lzio.h lmem.h ldo.h
 loadlib.o: loadlib.c lua.h luaconf.h lauxlib.h lualib.h

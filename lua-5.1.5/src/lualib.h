@@ -33,6 +33,9 @@ LUALIB_API int (luaopen_string) (lua_State *L);
 #define LUA_MATHLIBNAME	"math"
 LUALIB_API int (luaopen_math) (lua_State *L);
 
+#define LUA_TIMERSLIBNAME "timers"
+LUALIB_API int (luaopen_timers) (lua_State *l);
+
 #define LUA_DBLIBNAME	"debug"
 LUALIB_API int (luaopen_debug) (lua_State *L);
 
